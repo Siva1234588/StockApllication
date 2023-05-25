@@ -8,4 +8,6 @@ public interface StockPriceService {
 	
 	
 	public List<StockPriceDto> getAllStocks();
+
+	
 }

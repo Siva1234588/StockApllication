@@ -22,39 +22,38 @@ public class StockPriceScheduler {
 	 
 	@Scheduled(fixedDelay = 3000)
 	public void updateStockPriceJob1() {
-		Random random=new Random();
-		int p=random.nextInt(100);
+		Random ran=new Random();
+		int p=ran.nextInt(100);
 		StockPriceEntity stockPriceEntity = this.stockPriceRepository.findByName("Apple");
 		stockPriceEntity.setPrice(p);
 		StockPriceEntity spe1 = this.stockPriceRepository.save(stockPriceEntity);
 		StockPriceDto sde1=modelMapper.map(spe1, StockPriceDto.class);
-		System.out.println(spe1);
+	
 		
 	
 	}
 	
 	@Scheduled(fixedDelay = 3000)
 	public void updateStockPriceJob2() {
-		Random random=new Random();
-		int p=random.nextInt(100);
+		Random ra=new Random();
+		int p=ra.nextInt(100);
 		StockPriceEntity stockPriceEntity = this.stockPriceRepository.findByName("IBM");
 		stockPriceEntity.setPrice(p);
 		StockPriceEntity spe1 = this.stockPriceRepository.save(stockPriceEntity);
 		StockPriceDto sde1=modelMapper.map(spe1, StockPriceDto.class);
-		System.out.println(spe1);
+		
 		
 	
 	}
 	
 	@Scheduled(fixedDelay = 3000)
 	public void updateStockPriceJob3() {
-		Random random=new Random();
-		int p=random.nextInt(100);
+		Random randm=new Random();
+		int p=randm.nextInt(100);
 		StockPriceEntity stockPriceEntity = this.stockPriceRepository.findByName("Infosys");
 		stockPriceEntity.setPrice(p);
 		StockPriceEntity spe1 = this.stockPriceRepository.save(stockPriceEntity);
 		StockPriceDto sde1=modelMapper.map(spe1, StockPriceDto.class);
-		System.out.println(spe1);
 		
 	
 	}
@@ -68,7 +67,7 @@ public class StockPriceScheduler {
 		stockPriceEntity.setPrice(p);
 		StockPriceEntity spe1 = this.stockPriceRepository.save(stockPriceEntity);
 		StockPriceDto sde1=modelMapper.map(spe1, StockPriceDto.class);
-		System.out.println(spe1);
+		
 		
 	
 	}
@@ -81,7 +80,7 @@ public class StockPriceScheduler {
 		stockPriceEntity.setPrice(p);
 		StockPriceEntity spe1 = this.stockPriceRepository.save(stockPriceEntity);
 		StockPriceDto sde1=modelMapper.map(spe1, StockPriceDto.class);
-		System.out.println(spe1);
+		
 		
 	
 	}
