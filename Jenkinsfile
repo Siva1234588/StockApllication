@@ -5,7 +5,7 @@ pipeline {
         stage('Clean stage') {
             steps {
                 dir("StockPricesApp"){
-                    bat 'D:\13 Softwares\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin\mvn -f D:\stocksapp\StockApllication\pom.xml clean'
+                    bat 'D:/13 Softwares/apache-maven-3.8.6-bin/apache-maven-3.8.6/bin/mvn -f D:/stocksapp/StockApllication/pom.xml clean'
 
  
 
@@ -17,7 +17,7 @@ stages {
         stage('Compile stage') {
             steps {
                 dir("StockPricesApp"){
-                    bat 'D:\13 Softwares\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin\mvn -f D:\stocksapp\StockApllication\pom.xml compile'
+                    bat 'D:/13 Softwares/apache-maven-3.8.6-bin/apache-maven-3.8.6/bin/mvn -f D:/stocksapp/StockApllication/pom.xml compile'
 
  
 
@@ -29,7 +29,7 @@ stages {
         stage('Install stage') {
             steps {
                 dir("StockPricesApp"){
-                    bat 'D:\13 Softwares\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin\mvn -f D:\stocksapp\StockApllication\pom.xml install'
+                    bat 'D:/13 Softwares/apache-maven-3.8.6-bin/apache-maven-3.8.6/bin/mvn -f D:/stocksapp/StockApllication/pom.xml install'
 
  
 
